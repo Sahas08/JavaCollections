@@ -1,0 +1,62 @@
+Arrays - 
+    Pros
+    Improves readability, multiple values in single variable
+    Cons
+
+
+   1) Fixed in size -> Can't increase or decrease size based on requirement, we must know 
+    size in advance, which may not be possible.
+   2) 
+   
+      Homogeneous -> 
+      Student[] s = new Student[10000];
+      s[0] = new Student();
+      s[1] = new Customer(); // error Incompatible type found Customer required Student
+      
+      Solution -
+      Object[] a = new Object[10000];
+      a[0] = new Student();
+      a[1] = new Customer();
+      
+  3) Arrays concept is not implemented based on standard data structure -> Programmer has to write 
+  all logic, sorting, searching
+      
+----------------------------------------------------------------------
+
+Collections - Ready made method support, methods like contains
+  Implemented as standard data structure
+  
+  1) Growable -> Collections are growable in nature, i.e we can increase or decrease the 
+  size.
+  
+  2) Homogeneous or Heterogeneous -> Collections can hold both homogeneous or heterogeneous elements.
+  
+  3) Every collection class is implemented based on some standard data structure, hence for every
+  requirement readymade standard support is available. Being a programmer we are responsible to use 
+  those methods and we are not responsible to implement those methods.
+  
+--------------------------------------------------------------------------------
+
+Memory wise - collections is good
+
+Performance wise - Arrays is good
+
+if you want to add new element in ArrayList
+  -> Make new ArrayList with new size
+  -> Copy old elements
+  -> Add new element
+  -> Reassign reference variable
+  -> old ArrayList GC
+  
+  Collections can hold only objects. -> Integer only
+  Arrays can hold both primitives and objects. -> Integer[], int[]
+  
+  
+ ---------------------------------------------------------------------------------
+ 
+ Collection -> Used to represent group of individual objects as a single entity.
+ Collection Framework -> It contains several classes and interfaces which can be used to represent a group of individual objects as a single entity.
+ 
+ Java and C++
+ Collection <-> Container
+ Collection Framework <-> STL
