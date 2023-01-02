@@ -1,0 +1,73 @@
+              
+              $$$$$$$$$$$$$ ______ARRAYLIST_____ $$$$$$$$$$$
+              
+-------------------------------------------------
+List -> Contiguous Elements
+
+ArrayList<String> studentsName = new ArrayList<>(); //Creates an empty array
+
+studentsName.add("Rakesh"); // Array size-> 10
+After 10 elements -
+ArraySize = n + n/2 + 1
+This means, creates a new array of 16 size and copies old array
+
+----------------------------------------------------
+arrayListName.add(index, element);
+
+-> This adds the element at index (index)
+
+Ex -> list.add(1,50);
+This adds 50 at index 1.
+
+----------------------------------------------------
+list1 is an arraylist that has some elements;
+
+ArrayList<Integer> list2 = new ArrayList<>();
+
+list1.addAll(list2); 
+This will add all elements of list2 to list1
+-----------------------------------------------------
+
+list.get(index); ->Gives element at index
+-----------------------------------------------------
+
+list.remove(index);
+
+Ex -> 10,20,30,40,50
+list.remove(1);
+-> 10,30,40,50
+
+list.remove(Integer.valueOf(30));
+This removes the value 30 from ArrayList
+------------------------------------------------------
+
+list.clear();
+Removes all elements.
+------------------------------------------------------
+
+list.set(index, element);
+
+This sets the value of index to element.
+
+-------------------------------------------------------
+
+list.contains(50);
+Checks if the list contains 50 or not.
+-------------------------------------------------------
+list.size();
+-> Number of elements
+-------------------------------------------------------
+
+
+          $$$$$$$$$$$$$ ______ITERATOR_____ $$$$$$$$$$$
+          
+Iterator<Integer> it = list.iterator();
+
+while(it.hasNext()){ //Checks if iterator has an element 
+  System.out.println("Iterator "+it.next());
+}
+
+---------------------------------------------------------
+
+
+
